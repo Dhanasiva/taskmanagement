@@ -25,7 +25,7 @@ const Login = () => {
                 navigate('/AdminDash');
                 
             } else if (userType === 2) {
-                navigate('/AdminDash');
+                navigate('/employeedash');
                 
             }
         }
