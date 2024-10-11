@@ -57,7 +57,7 @@ const Login = () => {
                 <input type="password" placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)}/>
            </div>
             <div className="submit-container">
-            
+            <button type='submit' className='submit-button'>Submit</button>
             </div>
         </div>
     </div>
