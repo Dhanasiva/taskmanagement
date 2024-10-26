@@ -38,16 +38,13 @@ const SignUp = () => {
           alert(error,"Username Already exist");
         }
         else{
-          try {
+         
             const userCredentials = await auth.createUserWithEmailAndPassword(email,password);
             const user = userCredentials.user;
             await db.collection('users').doc(user.uid).set({username:UserName,email: email,type:type});
             alert("Success");
             navigate('/');
-           } catch (error) {
-            console.log(error);
-            alert(error);
-           }
+           
         }
     }
     

@@ -153,8 +153,7 @@ const handleDeletion = async(taskId) =>{
         <ListItemText><ul>
             {taskList.map(tasks => (
                 <li key={tasks.id}>
-                      <strong>Task:</strong> {tasks.task} <br />
-                      <strong>Assignee:</strong> {tasks.assignee} <br />
+                      
                       <strong>Progress:</strong> {tasks.progress}%<br />
                       <strong>Date-Assigned:</strong> {tasks.createdAt} <br />
                       <strong>Employee's Review:</strong> {tasks.progressReview}<br/>
