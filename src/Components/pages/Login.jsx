@@ -12,6 +12,7 @@ const Login = () => {
    
     const handleLogin = async (e)=> {
         e.preventDefault();
+        try{
         
             const userCredentials = await auth.signInWithEmailAndPassword(email, password);
             const user = userCredentials.user;
@@ -28,6 +29,12 @@ const Login = () => {
                 navigate('/employeedash');
                 
             }
+        }
+        catch(error){
+            console.log(error);
+            alert(error);
+        }
+
        
     }
     
