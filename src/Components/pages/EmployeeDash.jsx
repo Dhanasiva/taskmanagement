@@ -104,7 +104,8 @@ const handleProgressUpdate = async (e)=>{
         <ListItemText><ul>
             {taskList.map(tasks => (
                 <li key={tasks.id}>
-                      
+                      <strong>Task:</strong> {tasks.task} <br />
+                      <strong>Assignee:</strong> {tasks.assignee} <br />
                       <strong>Progress:</strong> {tasks.progress}%<br />
                       <strong>Date-Assigned:</strong> {tasks.createdAt} <br />
                       <form onSubmit={handleProgressUpdate}>
